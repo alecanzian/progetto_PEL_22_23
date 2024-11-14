@@ -1,0 +1,114 @@
+
+Nota: I nostri test sono suddivisi in diversi eseguibili, in modo da ridurre
+l'impatto di errori di compilazione o interruzioni impreviste del vostro codice.
+Per questo motivo, in questo file troverete molte linee valgrind ERROR SUMMARY: ...
+Tutte quante devono continuare con '0 errors from 0 contexts (suppressed: 0 
+from 0)'. 
+Se ci sono errori di compilazione (compaiono subito sotto a questo commento,
+prima dell'output di valgrind), cercate il punto in cui viene menzionato
+il vostro file json.cpp (dato che usiamo una libreria esterna per i test,
+è probabile che vedrete anche molti errori relativi a questa libreria, se 
+il vostro codice non compila correttamente. Ignorate quegli errori e concentratevi
+su quelli relativi a json.cpp).
+
+ATTENZIONE: se qui compaiono errori di compilazione, alcuni test non sono stati
+eseguiti e non hanno prodotto nessun output in results.txt! come prima cosa è quindi
+fondamentale che non ci siano errori di compilazione. 
+
+	
+==83418== Memcheck, a memory error detector
+==83418== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83418== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==83418== Command: ../consegne/10-09-2023/894004/boolean_functions.out
+==83418== 
+==83418== 
+==83418== HEAP SUMMARY:
+==83418==     in use at exit: 0 bytes in 0 blocks
+==83418==   total heap usage: 51 allocs, 51 frees, 117,349 bytes allocated
+==83418== 
+==83418== All heap blocks were freed -- no leaks are possible
+==83418== 
+==83418== For lists of detected and suppressed errors, rerun with: -s
+==83418== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+==83423== Memcheck, a memory error detector
+==83423== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83423== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==83423== Command: ../consegne/10-09-2023/894004/copy_move.out
+==83423== 
+==83423== 
+==83423== HEAP SUMMARY:
+==83423==     in use at exit: 0 bytes in 0 blocks
+==83423==   total heap usage: 84,590 allocs, 84,590 frees, 4,191,016 bytes allocated
+==83423== 
+==83423== All heap blocks were freed -- no leaks are possible
+==83423== 
+==83423== For lists of detected and suppressed errors, rerun with: -s
+==83423== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+==83428== Memcheck, a memory error detector
+==83428== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83428== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==83428== Command: ../consegne/10-09-2023/894004/exceptions.out
+==83428== 
+==83428== 
+==83428== HEAP SUMMARY:
+==83428==     in use at exit: 0 bytes in 0 blocks
+==83428==   total heap usage: 73 allocs, 73 frees, 118,829 bytes allocated
+==83428== 
+==83428== All heap blocks were freed -- no leaks are possible
+==83428== 
+==83428== For lists of detected and suppressed errors, rerun with: -s
+==83428== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+==83433== Memcheck, a memory error detector
+==83433== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83433== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==83433== Command: ../consegne/10-09-2023/894004/load_save_file.out
+==83433== 
+==83433== 
+==83433== HEAP SUMMARY:
+==83433==     in use at exit: 0 bytes in 0 blocks
+==83433==   total heap usage: 2,879,261 allocs, 2,879,261 frees, 162,474,604 bytes allocated
+==83433== 
+==83433== All heap blocks were freed -- no leaks are possible
+==83433== 
+==83433== For lists of detected and suppressed errors, rerun with: -s
+==83433== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+==83438== Memcheck, a memory error detector
+==83438== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83438== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==83438== Command: ../consegne/10-09-2023/894004/push_insert_iterators_operator[].out
+==83438== 
+==83438== 
+==83438== HEAP SUMMARY:
+==83438==     in use at exit: 0 bytes in 0 blocks
+==83438==   total heap usage: 376 allocs, 376 frees, 131,889 bytes allocated
+==83438== 
+==83438== All heap blocks were freed -- no leaks are possible
+==83438== 
+==83438== For lists of detected and suppressed errors, rerun with: -s
+==83438== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+==83443== Memcheck, a memory error detector
+==83443== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83443== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==83443== Command: ../consegne/10-09-2023/894004/set_get_functions.out
+==83443== 
+==83443== 
+==83443== HEAP SUMMARY:
+==83443==     in use at exit: 0 bytes in 0 blocks
+==83443==   total heap usage: 33 allocs, 33 frees, 115,797 bytes allocated
+==83443== 
+==83443== All heap blocks were freed -- no leaks are possible
+==83443== 
+==83443== For lists of detected and suppressed errors, rerun with: -s
+==83443== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+

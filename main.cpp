@@ -10,9 +10,9 @@ namespace fs = std::filesystem;
 
 int main() {
     try {
-        const std::string directory = "test2";
+        const std::string directory = "source_test";
 
-        // Check if the "test2" directory exists
+        // Check if the "source_test" directory exists
         if (!fs::exists(directory)) {
             std::cerr << "Errore: La directory " << directory << " non esiste." << std::endl;
             return 1;

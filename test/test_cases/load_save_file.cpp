@@ -8,7 +8,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "external/doctest/doctest/doctest.h"
 
-TEST_CASE("load small file") {
+TEST_CASE("load small file1") {
     try {
         std::string path = "../test_data/small1.json";  // t1.json
         json a;
@@ -22,14 +22,14 @@ TEST_CASE("load small file") {
             ifs >> b;
         }
         bool equal = (a == b);
-        REQUIRE_MESSAGE(equal == true, "error: file was loaded incorrectly.");
+        REQUIRE_MESSAGE(equal == true, "error: file1 was loaded incorrectly.");
     } catch (json_exception e) {
         REQUIRE_MESSAGE(false,
                         "ERROR unexpected json_exception thrown: " << e.msg);
     }
 }
 
-TEST_CASE("load big file 1") {
+TEST_CASE("load big file1 1") {
     try {
         std::string path = "../test_data/laureate.json";
         json a;
@@ -43,14 +43,14 @@ TEST_CASE("load big file 1") {
             ifs >> b;
         }
         bool equal = (a == b);
-        REQUIRE_MESSAGE(equal == true, "error: file was loaded incorrectly.");
+        REQUIRE_MESSAGE(equal == true, "error: file1 was loaded incorrectly.");
     } catch (json_exception e) {
         REQUIRE_MESSAGE(false,
                         "ERROR unexpected json_exception thrown: " << e.msg);
     }
 }
 
-TEST_CASE("load big file 2") {
+TEST_CASE("load big file1 2") {
     try {
         std::string path = "../test_data/redundant.json";
         json a;
@@ -64,14 +64,14 @@ TEST_CASE("load big file 2") {
             ifs >> b;
         }
         bool equal = (a == b);
-        REQUIRE_MESSAGE(equal == true, "error: file was loaded incorrectly.");
+        REQUIRE_MESSAGE(equal == true, "error: file1 was loaded incorrectly.");
     } catch (json_exception e) {
         REQUIRE_MESSAGE(false,
                         "ERROR unexpected json_exception thrown: " << e.msg);
     }
 }
 
-TEST_CASE("load big file 3") {
+TEST_CASE("load big file1 3") {
     try {
         std::string path = "../test_data/events.json";
         json a;
@@ -85,7 +85,7 @@ TEST_CASE("load big file 3") {
             ifs >> b;
         }
         bool equal = (a == b);
-        REQUIRE_MESSAGE(equal == true, "error: file was loaded incorrectly.");
+        REQUIRE_MESSAGE(equal == true, "error: file1 was loaded incorrectly.");
     } catch (json_exception e) {
         REQUIRE_MESSAGE(false,
                         "ERROR unexpected json_exception thrown: " << e.msg);
@@ -172,7 +172,7 @@ TEST_CASE("format error 1") {
 
     REQUIRE_MESSAGE(
         exception_thrown == true,
-        "error: file not in correct format but exception not thrown");
+        "error: file1 not in correct format but exception not thrown");
 }
 
 TEST_CASE("format error 2") {
@@ -191,7 +191,7 @@ TEST_CASE("format error 2") {
 
     REQUIRE_MESSAGE(
         exception_thrown == true,
-        "error: file not in correct format but exception not thrown");
+        "error: file1 not in correct format but exception not thrown");
 }
 
 TEST_CASE("format error 3") {
@@ -210,7 +210,7 @@ TEST_CASE("format error 3") {
 
     REQUIRE_MESSAGE(
         exception_thrown == true,
-        "error: file not in correct format but exception not thrown");
+        "error: file1 not in correct format but exception not thrown");
 }
 
 TEST_CASE("format error 4") {
@@ -229,7 +229,7 @@ TEST_CASE("format error 4") {
 
     REQUIRE_MESSAGE(
         exception_thrown == true,
-        "error: file not in correct format but exception not thrown");
+        "error: file1 not in correct format but exception not thrown");
 }
 
 TEST_CASE("format error 5") {
@@ -248,7 +248,7 @@ TEST_CASE("format error 5") {
 
     REQUIRE_MESSAGE(
         exception_thrown == true,
-        "error: file not in correct format but exception not thrown");
+        "error: file1 not in correct format but exception not thrown");
 }
 
 TEST_CASE("format error 6") {
@@ -267,7 +267,7 @@ TEST_CASE("format error 6") {
 
     REQUIRE_MESSAGE(
         exception_thrown == true,
-        "error: file not in correct format but exception not thrown");
+        "error: file1 not in correct format but exception not thrown");
 }
 
 TEST_CASE("format error 7") {
@@ -286,5 +286,5 @@ TEST_CASE("format error 7") {
 
     REQUIRE_MESSAGE(
         exception_thrown == true,
-        "error: file not in correct format but exception not thrown");
+        "error: file1 not in correct format but exception not thrown");
 }

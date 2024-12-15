@@ -27,7 +27,7 @@ TEST_CASE("move assignment 1") {
 
         REQUIRE_MESSAGE(
             equal == true,
-            "error: move assignment (or loading from file) failed.");
+            "error: move assignment (or loading from file1) failed.");
     } catch (json_exception e) {
         REQUIRE_MESSAGE(false,
                         "ERROR unexpected json_exception thrown: " << e.msg);
@@ -54,7 +54,7 @@ TEST_CASE("move assignment 2") {
 
         REQUIRE_MESSAGE(
             str == "AAL",
-            "error: move assignment (or loading from file) failed.");
+            "error: move assignment (or loading from file1) failed.");
     } catch (json_exception e) {
         REQUIRE_MESSAGE(false,
                         "ERROR unexpected json_exception thrown: " << e.msg);
@@ -80,7 +80,7 @@ TEST_CASE("move constructor") {
 
         REQUIRE_MESSAGE(
             equal == true,
-            "error: move constructor (or loading from file) failed.");
+            "error: move constructor (or loading from file1) failed.");
     } catch (json_exception e) {
         REQUIRE_MESSAGE(false,
                         "ERROR unexpected json_exception thrown: " << e.msg);
@@ -107,10 +107,10 @@ TEST_CASE("copy constructor") {
 
         REQUIRE_MESSAGE(
             equal_ab == true,
-            "error: copy constructor (or loading from file) failed.");
+            "error: copy constructor (or loading from file1) failed.");
         REQUIRE_MESSAGE(
             equal_bc == true,
-            "error: copy constructor (or loading from file) failed.");
+            "error: copy constructor (or loading from file1) failed.");
     } catch (json_exception e) {
         REQUIRE_MESSAGE(false,
                         "ERROR unexpected json_exception thrown: " << e.msg);

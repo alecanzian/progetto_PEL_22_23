@@ -10,6 +10,8 @@ namespace fs = std::filesystem;
 
 int main() {
     try {
+        std::cerr << "Parser Json 1.0.0" << std::endl;
+
         const std::string directory = "source_test";
 
         // Check if the "source_test" directory exists
